@@ -17,7 +17,7 @@ variable "git_repo" {
       repo1 = {
         uri            = "https://github.com/anup1987/spring-boot-hello-world-1"
         branch         = "master"
-    }
+    },
  
     repo2 = {
         uri               = "https://github.com/anup1987/cloud-build-samples/tree/main/maven-example"
