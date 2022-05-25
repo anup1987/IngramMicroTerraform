@@ -10,3 +10,12 @@ variable "repo_type" {
   default = "GITHUB"
 }
 
+variable "git_repo" {
+  type = "map"
+  default = {
+    "https://github.com/anup1987/spring-boot-hello-world-1"= "master"
+    "https://github.com/anup1987/spring-boot-hello-world-1"= "master"
+    "https://github.com/anup1987/spring-boot-hello-world-1"= "master"
+  }
+}
+
