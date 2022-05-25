@@ -18,7 +18,7 @@ variable "git_repo" {
     }
  
     repo2 = {
-        name            = "https://github.com/anup1987/cloud-build-samples/tree/main/maven-example"
+        uri               = "https://github.com/anup1987/cloud-build-samples/tree/main/maven-example"
         branch            = "main"
    } 
 }
