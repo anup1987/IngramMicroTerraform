@@ -11,11 +11,17 @@ variable "repo_type" {
 }
 
 variable "git_repo" {
+  description = "Git Repository Details"
   type = "map"
   default = {
-    "https://github.com/anup1987/spring-boot-hello-world-1"= "master"
-    "https://github.com/anup1987/spring-boot-hello-world-1"= "master"
-    "https://github.com/anup1987/spring-boot-hello-world-1"= "master"
-  }
+      repo1 = {
+        uri            = "https://github.com/anup1987/spring-boot-hello-world-1"
+        branch         = "master"
+    }
+ 
+    repo2 = {
+        name            = "https://github.com/anup1987/cloud-build-samples/tree/main/maven-example"
+        branch            = "main"
+   }
+    
 }
-
