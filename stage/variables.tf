@@ -10,7 +10,7 @@ variable "repo_type" {
 
 variable "git_repo" {
   description = "Git Repository Details"
-  type = "map"
+  type = map
   default = {
       repo1 = {
         uri            = "https://github.com/anup1987/spring-boot-hello-world-1"
@@ -20,6 +20,6 @@ variable "git_repo" {
     repo2 = {
         name            = "https://github.com/anup1987/cloud-build-samples/tree/main/maven-example"
         branch            = "main"
-   }
-    
+   } 
+}
 }
