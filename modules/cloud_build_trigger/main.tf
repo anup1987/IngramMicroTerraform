@@ -1,5 +1,5 @@
 resource "google_cloudbuild_trigger" "manual-trigger" {
-  name        = var.name
+  name        = var.names
 
   source_to_build {
     uri       = "https://github.com/anup1987/spring-boot-hello-world-1"
