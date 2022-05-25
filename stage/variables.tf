@@ -5,5 +5,5 @@ variable "name" {
 
 variable "repo_type" {
   type        = string
-  description = "The name of the Cloud Build resources"
+  description = "The name of the repo Type"
 }
