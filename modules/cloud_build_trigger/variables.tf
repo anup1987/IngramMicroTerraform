@@ -23,7 +23,7 @@ variable "git_repo" {
     
    repo3 = {
         name              = "app3"
-        uri               = "https://github.com/anup1987/helloworld.git"
+        uri               = "https://github.com/anup1987/helloworld"
         branch            = "main"
    }
     
