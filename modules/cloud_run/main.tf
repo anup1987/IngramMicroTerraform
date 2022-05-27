@@ -1,4 +1,4 @@
-data "google_container_registry_image" "app" {
+data "google_container_registry_image" "gcr" {
   name = var.image_name
 }
 
@@ -15,7 +15,7 @@ resource "google_cloud_run_service" "app" {
   template {
     spec {
       containers {
-        image = data.google_container_registry_image.app.image_url
+        image = data.google_container_registry_image.gcr.image_url
       }
     }
   }
