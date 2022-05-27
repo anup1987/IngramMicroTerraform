@@ -1,3 +1,4 @@
 variable "image_name" {
-  type = string
+  type = string.
+  default = "gcr.io/ingrammicroproject/hellospringwebapplication"
 }
