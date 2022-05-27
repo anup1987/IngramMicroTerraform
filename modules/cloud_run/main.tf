@@ -15,7 +15,7 @@ resource "google_cloud_run_service" "app" {
   template {
     spec {
       containers {
-        image = data.google_container_registry_image.gcr.image_url
+        image = "gcr.io/ingrammicroproject/hellospringwebapplication"
       }
     }
   }
