@@ -5,3 +5,9 @@ module "build-trigger_run" {
   branch    = var.branch
   repo_type = var.repo_type  
 }
+  
+module "cloud_run" {
+  source           = "../modules/cloud_run"
+  image_name       = var.image_name
+  depends_on       = [module.build-trigger]
+}
