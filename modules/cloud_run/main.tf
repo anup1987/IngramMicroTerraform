@@ -10,6 +10,7 @@ resource "google_project_service" "run" {
 resource "google_cloud_run_service" "app" {
   
    name     = "app"
+   location = "us-central1"
   
   template {
     spec {
