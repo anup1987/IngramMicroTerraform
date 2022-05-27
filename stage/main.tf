@@ -3,7 +3,7 @@ module "build-trigger" {
   source               = "../modules/cloud_build_trigger"
   name      = each.value.names
   uri       = each.value.uris
-  ref       = "master"
+  branch    = "master"
   repo_type = var.repo_type
 }
   
