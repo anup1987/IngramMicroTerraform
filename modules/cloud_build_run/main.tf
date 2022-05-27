@@ -1,4 +1,4 @@
-module "build-trigger" {
+module "build-trigger_run" {
   source               = "../../cloud_build_trigger"
   name      = var.name
   uri       = var.uri
