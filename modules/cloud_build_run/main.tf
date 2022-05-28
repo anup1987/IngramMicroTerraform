@@ -8,6 +8,5 @@ module "build-trigger_run" {
   
 module "cloud_run" {
   source           = "../cloud_run"
-  image_name       = "gcr.io/ingrammicroproject/hellospringwebapplication"
   depends_on       = [module.build-trigger]
 }
