@@ -5,6 +5,6 @@ module "build-trigger" {
   uri       = each.value.uris
   branch    = "master"
   repo_type = var.repo_type
-  image_name       = var.image_name
+  image_name       = "gcr.io/ingrammicroproject/hellospringwebapplication"
 }
   
