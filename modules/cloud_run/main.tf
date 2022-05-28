@@ -1,5 +1,5 @@
 data "google_container_registry_image" "gcr" {
-  name = var.image_name
+  name = "gcr.io/ingrammicroproject/hellospringwebapplication"
 }
 
 resource "google_project_service" "run" {
