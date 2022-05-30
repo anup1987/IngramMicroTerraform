@@ -9,5 +9,6 @@ module "build-trigger" {
 module "cloud_run" {
   source           = "../cloud_run"
   name             = var.name
+  registry         = var.registry
   depends_on       = [module.build-trigger]
 }
