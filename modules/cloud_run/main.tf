@@ -1,5 +1,5 @@
 data "google_container_registry_image" "gcr" {
-  name = var.registry
+  image_url = var.registry
 }
 
 resource "google_project_service" "run" {
