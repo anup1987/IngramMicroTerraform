@@ -1,7 +1,3 @@
-variable "registry" {
-  type        = string
-  description = "Image Registry"
-}
 
 variable "deploy_run_service_name" {
   type        = string
