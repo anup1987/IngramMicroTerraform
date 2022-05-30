@@ -1,5 +1,5 @@
 data "google_container_registry_image" "gcr" {
-  name = "hellospringwebapplication"
+  name = var.imagename
 }
 
 resource "google_project_service" "run" {
