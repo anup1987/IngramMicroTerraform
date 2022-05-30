@@ -14,15 +14,15 @@ variable "git_repo" {
   type = map
   default = {
       repo1 = {
-        names           = "app1"
-        uris            = "https://github.com/anup1987/spring-boot-hello-world-1"
-        branchs         = "master"
+        name           = "app1"
+        uri            = "https://github.com/anup1987/spring-boot-hello-world-1"
+        branch         = "master"
     },
  
     repo2 = {
-        names              =  "app2"
-        uris               = "https://github.com/anup1987/cloud-build-samples/tree/main/maven-example"
-        branchs            = "main"
+        name              =  "app2"
+        uri               = "https://github.com/anup1987/cloud-build-samples/tree/main/maven-example"
+        branch            = "main"
    } 
 }
 }
