@@ -19,3 +19,8 @@ variable "branch" {
   type        = string
   description = "The name of the Branch"
 }
+
+variable "registry" {
+  type        = string
+  description = "Image Registry"
+}
