@@ -1,7 +1,4 @@
-variable "image_name" {
-  type        = string
-  description = "The name of the Image"
-}
+
 
 variable "repo_type" {
   type        = string
