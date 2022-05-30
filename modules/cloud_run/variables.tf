@@ -1,4 +1,17 @@
-variable "name" {
+variable "registry" {
   type        = string
-  description = "The name of the Cloud Run Service"
+  description = "Image Registry"
 }
+
+variable "deploy_run_service_name" {
+  type        = string
+  description = "Cloud Run Service Name"
+}
+
+variable "location" {
+  type        = string
+  description = "Region for Deployment"
+  default = "us-central1"
+}
+
+
