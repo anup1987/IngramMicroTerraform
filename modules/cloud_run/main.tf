@@ -9,13 +9,17 @@ resource "google_project_service" "run" {
 
 resource "google_cloud_run_service" "deployrun" {
   
+  depends_on = [
+    google_project_service.run
+  ]
+  
    name     = var.deploy_run_service_name
-   location = "us-central1"
+   location = var.location
   
   template {
     spec {
       containers {
-        image = var.image
+        image = data.google_container_registry_image.gcr.image_url
       }
     }
   }
