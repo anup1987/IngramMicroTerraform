@@ -10,4 +10,9 @@ variable "location" {
   default = "us-central1"
 }
 
+variable "imagename" {
+  type        = string
+  description = "Name of the image"
+}
+
 
