@@ -19,3 +19,8 @@ variable "branch" {
   type        = string
   description = "The name of the Branch"
 }
+
+variable "imagename" {
+  type        = string
+  description = "The name of the Image"
+}
