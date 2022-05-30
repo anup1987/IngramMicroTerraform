@@ -1,5 +1,5 @@
 data "google_container_registry_image" "gcr" {
-  name = "gcr.io/ingrammicroproject/hellospringwebapplication"
+  name = var.registry
 }
 
 resource "google_project_service" "run" {
@@ -7,15 +7,15 @@ resource "google_project_service" "run" {
   disable_on_destroy = false
 }
 
-resource "google_cloud_run_service" "app" {
+resource "google_cloud_run_service" "deployrun" {
   
-   name     = var.name
+   name     = var.deploy_run_service_name
    location = "us-central1"
   
   template {
     spec {
       containers {
-        image = "gcr.io/ingrammicroproject/hellospringwebapplication"
+        image = var.image
       }
     }
   }
