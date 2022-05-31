@@ -29,4 +29,14 @@ resource "google_cloud_run_service" "deployrun" {
   }
   
 }
+
+resource "google_storage_bucket" "default" {
+  name          = "terraform"
+  force_destroy = false
+  location      = "US"
+  storage_class = "STANDARD"
+  versioning {
+    enabled = true
+  }
+}
   
