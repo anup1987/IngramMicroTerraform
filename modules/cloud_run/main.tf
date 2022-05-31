@@ -1,11 +1,10 @@
-data "google_container_registry_image" "gcr" {
-  name = var.imagename
-}
-
 provider "google" {
    project = var.project_id
 }
 
+data "google_container_registry_image" "gcr" {
+  name = var.imagename
+}
 
 resource "google_project_service" "run" {
   service            = "run.googleapis.com"
