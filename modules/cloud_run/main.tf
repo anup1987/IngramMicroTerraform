@@ -17,13 +17,13 @@ resource "google_cloud_run_service" "deployrun" {
     google_project_service.run
   ]
   
-   name     = var.deploy_run_service_name
+   name     = "var.deploy_run_service_name"
    location = var.location
   
   template {
     spec {
       containers {
-        image = data.google_container_registry_image.gcr.image_url
+        image = "gcr.io/ingrammicroproject/mavenproject@sha256:3ccda021425a6d4240f2b46480d7f006c641629b0f6c7f6f55e42ec7d7c256bf"
       }
     }
   }
