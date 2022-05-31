@@ -31,7 +31,7 @@ resource "google_cloud_run_service" "deployrun" {
 }
 
 resource "google_storage_bucket" "default" {
-  name          = "terraform"
+  name          = "ingramterraform"
   force_destroy = false
   location      = "US"
   storage_class = "STANDARD"
