@@ -23,7 +23,7 @@ resource "google_cloud_run_service" "deployrun" {
   template {
     spec {
       containers {
-        image = "data.google_container_registry_image.gcr.image_url"
+        image = "data.google_container_registry_image.gcr.name"
       }
     }
   }
