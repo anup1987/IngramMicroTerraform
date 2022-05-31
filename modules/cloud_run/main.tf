@@ -23,7 +23,7 @@ resource "google_cloud_run_service" "deployrun" {
   template {
     spec {
       containers {
-        image = "gcr.io/ingrammicroproject/hellospringwebapplication@sha256:2e22f85b3cf4c996d98c6534746af1a703b4a25264b102f464d0f5ed157866b8"
+        image = "gcr.io/ingrammicroproject/hellospringwebapplication:latest"
       }
     }
   }
