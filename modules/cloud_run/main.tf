@@ -2,6 +2,11 @@ data "google_container_registry_image" "gcr" {
   name = var.imagename
 }
 
+provider "google" {
+   project = var.project_id
+}
+
+
 resource "google_project_service" "run" {
   service            = "run.googleapis.com"
   disable_on_destroy = false
