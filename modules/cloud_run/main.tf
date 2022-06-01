@@ -19,7 +19,8 @@ resource "google_cloud_run_service" "deployrun" {
   
    name     = var.deploy_run_service_name
    location = var.location
-  
+   autogenerate_revision_name = true
+   
   template {
     spec {
       containers {
@@ -27,6 +28,8 @@ resource "google_cloud_run_service" "deployrun" {
       }
     }
   }
+   
+   
   
 }
 
