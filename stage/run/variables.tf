@@ -12,13 +12,13 @@ variable "service_details" {
   default = {
       repo1 = {
         name           = "app1"
-        registry       = "gcr.io/ingrammicroproject/hellospringwebapplication"
+        imagename       = "gcr.io/ingrammicroproject/hellospringwebapplication:latest"
         tag            = "latest"
     },
  
     repo2 = {
         name           =  "app2"
-        registry            =  "us.gcr.io/ingrammicroproject/spring-boot-hello-world-1"
+        registry            =  "us.gcr.io/ingrammicroproject/spring-boot-hello-world-1:latest"
         tag            =  "latest"
    } 
 }
