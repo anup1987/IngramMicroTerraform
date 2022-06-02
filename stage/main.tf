@@ -4,8 +4,6 @@ module "build-trigger_and_run" {
   name      = each.value.name
   uri       = each.value.uri
   branch    = "master"
-  repo_type = var.repo_type
-  imagename = each.value.imagename
-   
+  repo_type = var.repo_type   
 }
   
