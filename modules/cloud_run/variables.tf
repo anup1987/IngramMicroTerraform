@@ -14,9 +14,3 @@ variable "imagename" {
   type        = string
   description = "Name of the image"
 }
-
-variable "project_id" {
-  type        = string
-  description = "Project ID"
-}
-
