@@ -1,7 +1,3 @@
-provider "google" {
-   project = var.project_id
-}
-
 data "google_container_registry_image" "gcr" {
   name = var.imagename
 }
