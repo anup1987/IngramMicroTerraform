@@ -1,0 +1,25 @@
+
+variable "location" {
+  type        = string
+  description = "Region for Deployment"
+  default = "us-central1"
+}
+
+
+variable "service_details" {
+  description = "Deployment Details"
+  type = map
+  default = {
+      repo1 = {
+        name           = "app1"
+        registry       = "gcr.io/ingrammicroproject/hellospringwebapplication"
+        tag            = "latest"
+    },
+ 
+    repo2 = {
+        name           =  "app2"
+        uri            =  "us.gcr.io/ingrammicroproject/spring-boot-hello-world-1"
+        tag            =  "latest"
+   } 
+}
+}
