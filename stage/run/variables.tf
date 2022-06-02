@@ -17,8 +17,8 @@ variable "service_details" {
     },
  
     repo2 = {
-        name           =  "app2"
-        registry            =  "us.gcr.io/ingrammicroproject/spring-boot-hello-world-1:latest"
+        serviceName           =  "app2"
+        imagename            =  "us.gcr.io/ingrammicroproject/spring-boot-hello-world-1:latest"
         tag            =  "latest"
    } 
 }
