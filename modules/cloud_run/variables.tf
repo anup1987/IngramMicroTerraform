@@ -1,7 +1,7 @@
 
-variable "name" {
+variable "serviceName" {
   type        = string
-  description = "Cloud Run Service Name"
+  description = "Cloud Run Instance Name"
 }
 
 variable "location" {
