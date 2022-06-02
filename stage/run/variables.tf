@@ -11,9 +11,9 @@ variable "service_details" {
   type = map
   default = {
       repo1 = {
-        name           = "app1"
+        serviceName     = "app1"
         imagename       = "gcr.io/ingrammicroproject/hellospringwebapplication:latest"
-        tag            = "latest"
+        tag             = "latest"
     },
  
     repo2 = {
