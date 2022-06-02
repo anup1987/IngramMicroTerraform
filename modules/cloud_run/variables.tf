@@ -1,5 +1,5 @@
 
-variable "deploy_run_service_name" {
+variable "name" {
   type        = string
   description = "Cloud Run Service Name"
 }
