@@ -1,9 +1,3 @@
-terraform {
-  backend "gcs" {
-    bucket  = "ingramterraform"
-    prefix  = "terraform/state"
-  }
-}
 
 module "build-cloud_run" {
   for_each  = var.service_details
