@@ -1,8 +1,3 @@
-terraform {
-  backend "gcs" {
-    bucket  = "ingramterraform"
-  }
-}
 
 
 module "build-cloud_run" {
