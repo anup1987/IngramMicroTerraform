@@ -1,6 +1,6 @@
 module "global" {
  
-  source = "../global"
+  source = "../../global"
   
 }
 
