@@ -1,8 +1,4 @@
-module "global" {
- 
-  source = "../../global"
-  
-}
+
 
 module "build-trigger_and_run" {
   for_each  = var.git_repo
@@ -11,5 +7,4 @@ module "build-trigger_and_run" {
   uri       = each.value.uri
   branch    = "master"
   repo_type = var.repo_type
-  depends_on = [module.global]
 }
