@@ -1,3 +1,9 @@
+terraform {
+  backend "gcs" {
+    bucket  = "ingramterraform"
+    prefix  = "terraform/state/terraform.tfstate"
+  }
+}
 
 
 module "build-trigger" {
