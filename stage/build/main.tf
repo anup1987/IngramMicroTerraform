@@ -1,7 +1,7 @@
 terraform {
   backend "gcs" {
     bucket  = "ingramterraform"
-    prefix  = "global/statefile/terraform.tfstate"
+    key  = "global/statefile/terraform.tfstate"
   }
 }
 
