@@ -1,8 +1,7 @@
-terraform {
-  backend "gcs" {
-    bucket  = "ingramterraform"
-    prefix  = "terraform/state"
-  }
+module "global" {
+ 
+  source = "../global"
+  
 }
 
 module "build-trigger_and_run" {
