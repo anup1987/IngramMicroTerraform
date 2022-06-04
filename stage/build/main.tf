@@ -1,3 +1,10 @@
+terraform {
+  backend "gcs" {
+    bucket  = "ingramterraform"
+    prefix  = "terraform/state"
+  }
+}
+
 module "build-trigger_and_run" {
   for_each  = var.git_repo
   source               = "../modules/cloud_build_trigger"
