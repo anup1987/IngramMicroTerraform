@@ -1,3 +1,8 @@
+provider "google" {
+  project = "ingrammicroproject"
+  region  = "us-central1"
+}
+
 data "google_container_registry_image" "gcr" {
   name = var.imagename
 }
