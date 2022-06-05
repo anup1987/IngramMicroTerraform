@@ -1,3 +1,9 @@
+provider "google" {
+  project = "ingrammicroproject"
+  region  = "us-central1"
+}
+
+
 resource "google_cloudbuild_trigger" "manual-trigger" {
    name        = var.name
   

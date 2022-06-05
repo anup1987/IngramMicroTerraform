@@ -1,5 +1,6 @@
 provider "google" {
-   project_id = var.project_id
+  project = "ingrammicroproject"
+  region  = "us-central1"
 }
 
 data "google_container_registry_image" "gcr" {
@@ -17,16 +18,22 @@ resource "google_cloud_run_service" "deployrun" {
     google_project_service.run
   ]
   
-   name     = "fuckgfgfuuus"
+
+   name     = var.serviceName
    location = var.location
-  
+   autogenerate_revision_name = true
+   
   template {
     spec {
       containers {
-        image = "gcr.io/ingrammicroproject/mavenproject@sha256:3ccda021425a6d4240f2b46480d7f006c641629b0f6c7f6f55e42ec7d7c256bf"
+        image = data.google_container_registry_image.gcr.name
       }
     }
   }
+   
+   
   
 }
+
+
   
