@@ -18,6 +18,7 @@ resource "google_cloud_run_service" "deployrun" {
     google_project_service.run
   ]
   
+
    name     = var.serviceName
    location = var.location
    autogenerate_revision_name = true
