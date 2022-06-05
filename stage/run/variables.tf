@@ -6,20 +6,12 @@ variable "location" {
 }
 
 
-variable "service_details" {
-  description = "Deployment Details"
-  type = map
-  default = {
-      repo1 = {
-        serviceName     = "app1"
-        imagename       = "gcr.io/ingrammicroproject/hellospringwebapplication:latest"
-        tag             = "latest"
-    },
- 
-    repo2 = {
-        serviceName           =  "app2"
-        imagename            =  "gcr.io/ingrammicroproject/hellospringwebapplication:latest"
-        tag            =  "latest"
-   } 
+variable "serviceName" {
+  type        = string
+  description = "Service Name"
 }
+
+variable "imagename" {
+  type        = string
+  description = "Image Name"
 }
